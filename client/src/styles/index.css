@@ -1,0 +1,88 @@
+/* Spotify colors */
+:root {
+    --spotify-green: #1db954;
+    --spotify-black: #191414;
+    --spotify-white: #ffffff;
+  }
+  
+  /* BeReal colors */
+  :root {
+    --bereal-blue: #4F9FDA;
+    --bereal-purple: #613DC1;
+    --bereal-pink: #E52A6F;
+    --bereal-orange: #FB8B24;
+    --bereal-yellow: #FFC107;
+  }
+  
+  /* Mix of Spotify and BeReal colors */
+  :root {
+    --primary-color: var(--bereal-blue);
+    --secondary-color: var(--bereal-purple);
+    --text-color: var(--spotify-black);
+    --bg-color: var(--spotify-white);
+    --accent-color: var(--spotify-green);
+    --warning-color: var(--bereal-pink);
+    --error-color: #FF4136;
+    --success-color: #2ECC40;
+  }
+  
+  /* Global styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  button {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  input[type="text"], input[type="password"], textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+  }
+  
